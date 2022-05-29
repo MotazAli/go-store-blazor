@@ -1,0 +1,16 @@
+﻿<h3>@_product.Name</h3>
+
+<img src="@_product.Image" height=150 width=150  />
+
+<h4>@_product.Price</h4>
+
+<button @onclick="@( () => AddItemMethodCallback.InvokeAsync(_product) )"  >Add</button>
+
+@code {
+    [Parameter]
+    public Product _product { get; set; } = new Product();
+
+    [Parameter]
+    public EventCallback<Product> AddItemMethodCallback { get; set; }
+
+}

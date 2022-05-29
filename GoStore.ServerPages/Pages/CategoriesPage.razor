@@ -1,0 +1,30 @@
+﻿
+@page "/categories"
+
+@if (_categories is null)
+{
+    <h1>Loading...</h1>
+}
+else if(_categories?.Count() <= 0)
+{
+    <h1>No data</h1>
+}
+else
+{
+    @foreach (Category category in _categories)
+   {
+       <h3>@category.Name</h3>
+   }
+}
+
+@code {
+    [Inject]
+    public ICategoryService _categoryService { get; set; }
+    private IEnumerable<Category>? _categories { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        _categories = await _categoryService.GetAllAsync(CancellationToken.None);
+        await base.OnInitializedAsync();
+    }
+}

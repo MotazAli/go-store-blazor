@@ -1,0 +1,9 @@
+﻿# If you want to create a migration just write that command  
+> dotnet ef migrations add FirstMigration
+
+
+# If you want to undo the last migration just write that command
+> dotnet ef migrations remove
+
+# If you want to apply migration just write that command 
+> dotnet ef database update

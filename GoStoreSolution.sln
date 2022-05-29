@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GoStore.Server", "GoStore\GoStore.Server.csproj", "{33BE0DA4-F707-4602-BBCD-D8A50768CC4A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GoStore.Data", "GoStore.Data\GoStore.Data.csproj", "{0F7E128F-E865-48E0-8F94-1A0DFABC4D18}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GoStore.Controllers", "GoStore.Controllers\GoStore.Controllers.csproj", "{D4CB726E-DA8B-4A06-A644-AEFE024CA9F9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GoStore.Repositories", "GoStore.Repositories\GoStore.Repositories.csproj", "{D2B7A935-8C9A-4633-9F55-59871104615A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GoStore.Services", "GoStore.Services\GoStore.Services.csproj", "{19DC5AE4-158D-422F-B215-FF33521462C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoStore.ServerPages", "GoStore.ServerPages\GoStore.ServerPages.csproj", "{9A43DD66-8AAA-4167-A94E-BB8BAF2C0B32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoStore.Components", "GoStore.Components\GoStore.Components.csproj", "{7D61E055-E429-4887-9205-77439E00CE14}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{33BE0DA4-F707-4602-BBCD-D8A50768CC4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33BE0DA4-F707-4602-BBCD-D8A50768CC4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33BE0DA4-F707-4602-BBCD-D8A50768CC4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33BE0DA4-F707-4602-BBCD-D8A50768CC4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F7E128F-E865-48E0-8F94-1A0DFABC4D18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F7E128F-E865-48E0-8F94-1A0DFABC4D18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F7E128F-E865-48E0-8F94-1A0DFABC4D18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F7E128F-E865-48E0-8F94-1A0DFABC4D18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4CB726E-DA8B-4A06-A644-AEFE024CA9F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4CB726E-DA8B-4A06-A644-AEFE024CA9F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4CB726E-DA8B-4A06-A644-AEFE024CA9F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4CB726E-DA8B-4A06-A644-AEFE024CA9F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2B7A935-8C9A-4633-9F55-59871104615A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2B7A935-8C9A-4633-9F55-59871104615A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2B7A935-8C9A-4633-9F55-59871104615A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2B7A935-8C9A-4633-9F55-59871104615A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19DC5AE4-158D-422F-B215-FF33521462C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19DC5AE4-158D-422F-B215-FF33521462C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19DC5AE4-158D-422F-B215-FF33521462C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19DC5AE4-158D-422F-B215-FF33521462C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A43DD66-8AAA-4167-A94E-BB8BAF2C0B32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A43DD66-8AAA-4167-A94E-BB8BAF2C0B32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A43DD66-8AAA-4167-A94E-BB8BAF2C0B32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A43DD66-8AAA-4167-A94E-BB8BAF2C0B32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D61E055-E429-4887-9205-77439E00CE14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D61E055-E429-4887-9205-77439E00CE14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D61E055-E429-4887-9205-77439E00CE14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D61E055-E429-4887-9205-77439E00CE14}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EA1BD54F-6345-4141-8D39-CB45C287D277}
+	EndGlobalSection
+EndGlobal

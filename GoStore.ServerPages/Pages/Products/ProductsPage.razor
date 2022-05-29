@@ -1,0 +1,55 @@
+﻿@*@page "/products"
+
+
+@if( _products is null )
+{ <h3> loading ... </h3> }
+else if( _products?.Count == 0 )
+{ 
+    <h3> No products </h3>
+}
+else
+{
+    @foreach (Product product in _products)
+    {
+        <ProductComponent product="@product" AddItemMethodCallback="AddItem" />
+    }
+}
+
+
+
+
+
+
+@code {
+
+    [Inject]
+    public IProductService _productService { get; set; }
+
+    [Inject]
+    public ICartService _cartService { get; set; }
+
+    public List<Product> _products { get; set; } = null;
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        base.OnInitializedAsync();
+        _products = await _productService.ProductsAsync();
+        var result = from product in _products.ToList()
+                     group product by product.CategoryId into temp
+                     select new
+                     {
+                         categoryId = temp.Key,
+                         products = temp
+                     };
+
+    }
+
+    private void AddItem(Product product)
+    {
+        CartItem item = new() { Product = product , ProductId = product.Id , Quantaty = 1 };
+        _cartService.AddItemAsync(item);
+    }
+
+}
+*@
